@@ -1,12 +1,14 @@
 <div class="my-wrapper">
 
-<h1 class="custom-font1">Upload Your Pic</h1>
+<h1 class="custom-font1 span6 offset3">Upload Your Pic</h1>
 	<div class="span6 offset3 shower-curtain">
 
 	<%= simple_form_for @pic do |f| %>
-		<%= f.input :hour %>
-		<%= f.input :emotion, :label => 'Mood' %>
-		<%= f.input :learned, :label => 'Intake' %>
+		<%= f.input :image, :as => :file %>
+			<br />
+		<%= f.input :hour, :label => 'Time taken', :placeholder => 'Enter a number' %>
+		<%= f.input :emotion, :label => 'Mood I was in', :placeholder => 'Feeling great!' %>
+		<%= f.input :learned, :label => 'What I was learning', :placeholder => 'Ruby on Rails, CSS, html, Git, Github, Heroku and much more', :input_html => { :rows => 10 } %>
 		<%= submit_tag "Save my picture", :class => 'btn btn-large btn-primary' %>
 	<% end %>
 
