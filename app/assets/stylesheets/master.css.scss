@@ -1,0 +1,41 @@
+body {
+	background: url('sunset.jpg') no-repeat center center fixed; 
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+	//i got this image online
+}
+
+.custom-font1{
+	font-family: Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif;
+	font-size: 3em;
+	font-weight: 100;
+	letter-spacing: 0.05em;
+	text-rendering: optimizeLegibility;
+	color: white;
+}
+
+.custom-font2{
+	font-family: Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif;
+	font-size: 1em;
+	line-height: 1.2em;
+	font-weight: 300;
+	color: white;
+}
+
+.box h2, .box p {
+	color:white;
+}
+
+.spacer{
+	line-height:0.5em;
+}
+
+.my-wrapper h1,
+.my-wrapper h2,
+.my-wrapper h3,
+.my-wrapper p {
+	color:white;
+}
+

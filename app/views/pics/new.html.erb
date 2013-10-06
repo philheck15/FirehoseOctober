@@ -1,0 +1,8 @@
+<h1>Upload Your Pic</h1>
+
+<%= simple_form_for @pic do |f| %>
+	<%= f.input :hour %>
+	<%= f.input :emotion, :label => 'Mood' %>
+	<%= f.input :learned, :label => 'Intake' %>
+	<%= submit_tag "Save" %>
+<% end %>
