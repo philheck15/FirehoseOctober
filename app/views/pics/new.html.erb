@@ -4,7 +4,7 @@
 	<div class="span6 offset3 shower-curtain">
 
 	<%= simple_form_for @pic do |f| %>
-		<%= f.input :image, :as => :file %>
+		<%= f.input :image, :as => :file, :placeholder => 'Upload an image' %>
 			<br />
 		<%= f.input :hour, :label => 'Time taken', :placeholder => 'Enter a number' %>
 		<%= f.input :emotion, :label => 'Mood I was in', :placeholder => 'Feeling great!' %>
